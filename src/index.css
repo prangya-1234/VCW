@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: muli;
+}
+
+.navbar{
+  background-color: white!important;
+}
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active{
+font-weight: bold;
+border-bottom: 1px solid #565387;
+
+}
+.navbar a:hover{
+  color: #0bbfec !important;
+}
+
+@media (max-width: 991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.logo{
+      height: 100%;
+      width: 100%; 
+      
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +66,174 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.background-About {
+  background-image: url('./assets/conf.jpg');
+  background-size: cover;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.white-background {
+  background-color: white;
+  /* Optional: You can add more styles as needed */
+  width: 100px; /* Example width */
+  height: 100px; /* Example height */
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: rgb(13, 2, 2);
+}
+.text-align-center {
+  text-align: justify;
+}
+
+.align-center {
+  text-align: center;
+}
+.right-align {
+  display: flex;
+  justify-content: flex-start; /* Align items horizontally to the left */
+  align-items: center; /* Align items vertically to the center */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  padding-left: 20px;
+}
+.background-createRoom {
+  background-image: url('./assets/room2.jpg');
+  background-size: contain;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.custom-input {
+  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  border: 1px solid #ccc; /* Add border to the input fields */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  background-image: linear-gradient(79deg,#7439db,#C66FBC 48%,#F79440);
+
+}
+
+ .auth-form-container, .login-form, .register-form{
+  display: flex;
+  flex-direction:column;
+
+  
+  
+ 
+ }
+ @media screen and (min-width: 600px) {
+  .auth-form-container{
+    padding: 5rem;
+    background-origin: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    
+   }
+ }
+
+ label{
+  text-align: left;
+  padding: 0.25rem 0;
+  
+ }
+
+ input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+ 
+ }
+
+ button{
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  
+  
+ }
+.link-bin{
+     background-color: none;
+     color: wheat;
+     text-decoration: underline;
+     
+}
+
+.button-reg{
+  float: right; 
+}
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+  margin: 0.0.10px.0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+#header .brand-name{
+  color: #3498db;
+}
+#header h2{
+  color: #484848;
+  font-size: 24px;
+}
+#header.btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header.btn-get-started:hover{
+  background: #3498db;
+  color: #fff;
+}
+.header-img{
+  text-align: left;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform: translate(10px);
+  }
+  100%{
+    transform: translate(-10px);
+  }
+}
+
+@keyframes up-down {
+  0%{
+    transform: translate(10px);
+  }
+  100%{
+    transform: translate(-10px);
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const Navb = () => {
   return (
     <div className="bg-black/90">
       <div className=" h-[5rem] flex items-center justify-between px-4 md:max-w-[90vw] mx-auto">
@@ -18,15 +18,10 @@ const Navbar = () => {
         {/* Right */}
         <div className="">
           <ul className="text-white font-bold flex items-center gap-4 cursor-pointer">
-              <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Sign Up</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Log In</NavLink>
-        </li>
             <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/about">About Us</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/">Home</NavLink>
         </li>
+            <li>Blogs</li>
           </ul>
         </div>
       </div>
@@ -34,4 +29,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navb;
