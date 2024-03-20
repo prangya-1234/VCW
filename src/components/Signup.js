@@ -6,7 +6,7 @@ import Navb from "./Navb";
 
 const Signup = () => {
   const navigate = useNavigate(); // Define navigate using useNavigate hook
-  const data = { roomName: "", roomAdminName: "" };
+  const data = { userName: "", emailId: "",password:"" };
   const [inputData, setinputData] = useState(data);
 
   const handleData = (e) => {
@@ -29,7 +29,7 @@ const Signup = () => {
         Swal.fire({
           position: 'top',
           icon: 'success',
-          title: 'Room Create Successfully',
+          title: 'Registration Successfully',
           showConfirmButton: false,
           timer: 1500
         });
@@ -44,22 +44,29 @@ const Signup = () => {
   return (
     <>
       <Navb/>
-      <div className="my-5 background-createRoom">
-        <h1 className="text-center" style={{ fontSize: '19px' }}>Create Room</h1>
+      <div className="my-5 background-singup">
+        <h1 className="text-center" style={{ fontSize: '19px' }}>Registration</h1>
         <div className="container contact_div">
           <div className="row text-center">
             <div className="col-mb-6 col-5 mx-right">
               <form>
 
                 <div className="mb-3">
-                <label htmlFor="name" className="form-label" style={{ fontSize: '17px' }}>Room Name</label> 
-                <input type="text" className="form-control custom-input" value={inputData.roomName} onChange={handleData} placeholder="Enter Name" name="roomName" style={{ marginTop: '20px' }} />
+                <label htmlFor="name" className="form-label" style={{ fontSize: '17px' }}>Your Name</label> 
+                <h> </h>
+                <input type="text" className="form-control custom-input" value={inputData.userName} onChange={handleData} placeholder="Enter Name" name="userName" style={{ marginTop: '20px' }} />
 
                 </div>
 
                 <div className="mb-3">
-                  <label htmlFor="dob" className="form-label" style={{ fontSize: '17px' }}>Admin Name</label>
-                  <input type="text" className="form-control custom-input" value={inputData.roomAdminName} onChange={handleData} placeholder="Enter AdminName" name="roomAdminName" />
+                  <label htmlFor="dob" className="form-label" style={{ fontSize: '17px' }}>Email Id</label>
+                  <h> </h>
+                  <input type="text" className="form-control custom-input" value={inputData.emailId} onChange={handleData} placeholder="youremail@gmail.com" name="emailId" />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="dob" className="form-label" style={{ fontSize: '17px' }}>Password</label>
+                  <h> </h>
+                  <input type="text" className="form-control custom-input" value={inputData.password} onChange={handleData} placeholder="*********" name="password" />
                 </div>
                 <div className="col-12">
                   <button className="btn btn-outline-primary" onClick={handleSubmit} type="submit">

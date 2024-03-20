@@ -115,7 +115,14 @@ code {
   border: 1px solid #ccc; /* Add border to the input fields */
   padding: 10px; /* Add padding for better spacing */
 }
-
+.background-singup {
+  background-image: url('./assets/login.jpg');
+  background-size: contain;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
 .App {
   text-align: center;
   display: flex;

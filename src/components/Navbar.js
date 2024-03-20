@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="">
           <ul className="text-white font-bold flex items-center gap-4 cursor-pointer">
               <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Sign Up</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/signup">Sign Up</NavLink>
         </li>
         <li className="nav-item">
           <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Log In</NavLink>
