@@ -4,6 +4,7 @@ import Room from "./Room";
 import About from "./components/About";
 import CreatRoom from "./components/CreatRoom";
 import Signup from './components/Signup';
+import Login from './components/LogIn';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/create/:room" element={<CreatRoom/>}/>
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </div>
   );

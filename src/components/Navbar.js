@@ -22,7 +22,7 @@ const Navbar = () => {
           <NavLink  activeClassName='menu_active'className="nav-link"to="/signup">Sign Up</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Log In</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/login">Log In</NavLink>
         </li>
             <li className="nav-item">
           <NavLink  activeClassName='menu_active'className="nav-link"to="/about">About Us</NavLink>
