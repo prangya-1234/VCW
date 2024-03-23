@@ -44,7 +44,7 @@ const Login = () => {
   return (
     <>
       <Navb/>
-      <div className="my-5 background-singup">
+      <div className="my-5 background-singIn">
         <h1 className="text-center" style={{ fontSize: '19px' }}>Registration</h1>
         <div className="container contact_div">
           <div className="row text-center">

@@ -116,6 +116,14 @@ code {
   padding: 10px; /* Add padding for better spacing */
 }
 .background-singup {
+  background-image: url('./assets/room2.jpg');
+  background-size: contain;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.background-singIn {
   background-image: url('./assets/login.jpg');
   background-size: contain;
   height: 100vh; /* Set height to 100% of viewport height */
