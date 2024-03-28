@@ -68,13 +68,22 @@ code {
     monospace;
 }
 .background-About {
-  background-image: url('./assets/conf.jpg');
-  background-size: cover;
+  background-image: url('./assets/About\ img.png');
+  background-size: contain;
   height: 100vh; /* Set height to 100% of viewport height */
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom right;
 }
+.background-Blogs {
+  background-image: url('./assets/blogs.jpg');
+  background-size: 50%; /* Adjusted background size */
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 .white-background {
   background-color: white;
   /* Optional: You can add more styles as needed */
@@ -251,4 +260,37 @@ code {
   100%{
     transform: translate(-10px);
   }
+}
+
+.blue-text {
+  color: blue;
+}
+.read-text {
+  color: rgb(255, 0, 21);
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }

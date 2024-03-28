@@ -1,9 +1,9 @@
 import React from "react";
-import Navb from "./Navb";
-const Bloges = () => {
+import Nv from "./Nv";
+const Blg = () => {
   return (
     <>
-      <Navb />
+      <Nv/>
       <div className="background-Blogs ">
         <div className="content-container">
           <div className="welcome-text">
@@ -76,4 +76,4 @@ const Bloges = () => {
   );
 };
 
-export default Bloges;
+export default Blg;

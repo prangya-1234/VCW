@@ -1,10 +1,11 @@
 import React from "react";
 import Navb from "./Navb";
+import Nv from "./Nv";
 
-const About = () => {
+const Abt = () => {
   return (
     <>
-      <Navb />
+      <Nv/>
       <div className="background-About">
         <div className="content-container">
           <div className="welcome-text">
@@ -49,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Abt;

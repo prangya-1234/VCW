@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const Nv = () => {
   return (
     <div className="bg-black/90">
       <div className=" h-[5rem] flex items-center justify-between px-4 md:max-w-[90vw] mx-auto">
@@ -18,17 +18,20 @@ const Navbar = () => {
         {/* Right */}
         <div className="">
           <ul className="text-white font-bold flex items-center gap-4 cursor-pointer">
-              <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/signup">Sign Up</NavLink>
+          <li className="nav-item">
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/hom">Home</NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/login">Log In</NavLink>
+              <li className="nav-item">
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/create/:room">Creat Room</NavLink>
         </li>
             <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/about">About Us</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/abt">About Us</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/bloges">Blogs</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/blg">Blogs</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/">Log Out</NavLink>
         </li>
           </ul>
         </div>
@@ -37,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Nv;

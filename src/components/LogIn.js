@@ -61,11 +61,13 @@ const Login = () => {
                   <h> </h>
                   <input type="text" className="form-control custom-input" value={inputData.password} onChange={handleData} placeholder="*********" name="password" />
                 </div>
-                <div className="col-sm-12 ">
-                  <button className="btn btn-primary"onClick={handleSubmit} type="submit">
+                <div className="col-sm-12">
+                  <NavLink to="/hom" className="blue-text">
                    Login
-                  </button>
-                  <NavLink to="/" className="btn btn-outline-danger">
+                  </NavLink>
+                  
+                  <h> </h>
+                  <NavLink to="/" className="read-text">
                     Cancel
                   </NavLink>
                   <h1>{'\n'}</h1>

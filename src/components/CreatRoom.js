@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate, NavLink } from 'react-router-dom';
 import Swal from "sweetalert2";
-import Navb from "./Navb";
+import Nv from "./Nv";
 
 const CreatRoom = () => {
   const navigate = useNavigate(); // Define navigate using useNavigate hook
@@ -43,7 +43,7 @@ const CreatRoom = () => {
 
   return (
     <>
-      <Navb/>
+      <Nv/>
       <div className="my-5 background-createRoom">
         <h1 className="text-center" style={{ fontSize: '19px' }}>Create Room</h1>
         <div className="container contact_div">

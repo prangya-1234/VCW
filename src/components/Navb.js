@@ -19,9 +19,9 @@ const Navb = () => {
         <div className="">
           <ul className="text-white font-bold flex items-center gap-4 cursor-pointer">
             <li className="nav-item">
-          <NavLink  activeClassName='menu_active'className="nav-link"to="/">Home</NavLink>
+          <NavLink  activeClassName='menu_active'className="nav-link"to="/">Back</NavLink>
         </li>
-            <li>Blogs</li>
+       
           </ul>
         </div>
       </div>
